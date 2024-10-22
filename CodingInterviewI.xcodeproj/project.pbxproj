@@ -11,11 +11,10 @@
 		BD488BE52CBDB19800DB33CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD488BE42CBDB19800DB33CC /* ContentView.swift */; };
 		BD488BE72CBDB19900DB33CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD488BE62CBDB19900DB33CC /* Assets.xcassets */; };
 		BD488BEA2CBDB19900DB33CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD488BE92CBDB19900DB33CC /* Preview Assets.xcassets */; };
-		BD488BEC2CBDB19900DB33CC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD488BEB2CBDB19900DB33CC /* Persistence.swift */; };
-		BD488BEF2CBDB19900DB33CC /* CodingInterviewI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD488BED2CBDB19900DB33CC /* CodingInterviewI.xcdatamodeld */; };
 		BD488BF92CBDB19900DB33CC /* CodingInterviewITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD488BF82CBDB19900DB33CC /* CodingInterviewITests.swift */; };
 		BD488C032CBDB19900DB33CC /* CodingInterviewIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD488C022CBDB19900DB33CC /* CodingInterviewIUITests.swift */; };
 		BD488C052CBDB19900DB33CC /* CodingInterviewIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD488C042CBDB19900DB33CC /* CodingInterviewIUITestsLaunchTests.swift */; };
+		BD488C132CBDB4E200DB33CC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD488C122CBDB4E200DB33CC /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +40,12 @@
 		BD488BE42CBDB19800DB33CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD488BE62CBDB19900DB33CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD488BE92CBDB19900DB33CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BD488BEB2CBDB19900DB33CC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		BD488BEE2CBDB19900DB33CC /* CodingInterviewI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CodingInterviewI.xcdatamodel; sourceTree = "<group>"; };
 		BD488BF42CBDB19900DB33CC /* CodingInterviewITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingInterviewITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD488BF82CBDB19900DB33CC /* CodingInterviewITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingInterviewITests.swift; sourceTree = "<group>"; };
 		BD488BFE2CBDB19900DB33CC /* CodingInterviewIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingInterviewIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD488C022CBDB19900DB33CC /* CodingInterviewIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingInterviewIUITests.swift; sourceTree = "<group>"; };
 		BD488C042CBDB19900DB33CC /* CodingInterviewIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingInterviewIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD488C122CBDB4E200DB33CC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +96,10 @@
 		BD488BE12CBDB19800DB33CC /* CodingInterviewI */ = {
 			isa = PBXGroup;
 			children = (
+				BD488C112CBDB4D800DB33CC /* Utils */,
 				BD488BE22CBDB19800DB33CC /* CodingInterviewIApp.swift */,
 				BD488BE42CBDB19800DB33CC /* ContentView.swift */,
 				BD488BE62CBDB19900DB33CC /* Assets.xcassets */,
-				BD488BEB2CBDB19900DB33CC /* Persistence.swift */,
-				BD488BED2CBDB19900DB33CC /* CodingInterviewI.xcdatamodeld */,
 				BD488BE82CBDB19900DB33CC /* Preview Content */,
 			);
 			path = CodingInterviewI;
@@ -131,6 +128,14 @@
 				BD488C042CBDB19900DB33CC /* CodingInterviewIUITestsLaunchTests.swift */,
 			);
 			path = CodingInterviewIUITests;
+			sourceTree = "<group>";
+		};
+		BD488C112CBDB4D800DB33CC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BD488C122CBDB4E200DB33CC /* Theme.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD488BEC2CBDB19900DB33CC /* Persistence.swift in Sources */,
 				BD488BE52CBDB19800DB33CC /* ContentView.swift in Sources */,
+				BD488C132CBDB4E200DB33CC /* Theme.swift in Sources */,
 				BD488BE32CBDB19800DB33CC /* CodingInterviewIApp.swift in Sources */,
-				BD488BEF2CBDB19900DB33CC /* CodingInterviewI.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +437,7 @@
 				DEVELOPMENT_TEAM = BUWXBA2ZY6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to create recordings";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,6 +467,7 @@
 				DEVELOPMENT_TEAM = BUWXBA2ZY6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to create recordings";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -596,19 +602,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		BD488BED2CBDB19900DB33CC /* CodingInterviewI.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BD488BEE2CBDB19900DB33CC /* CodingInterviewI.xcdatamodel */,
-			);
-			currentVersion = BD488BEE2CBDB19900DB33CC /* CodingInterviewI.xcdatamodel */;
-			path = CodingInterviewI.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = BD488BD72CBDB19800DB33CC /* Project object */;
 }
